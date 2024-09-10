@@ -15,7 +15,10 @@ public:
 
 	void setRoomID(int);
 	void setSeatsPerRoom(int);
+	void setRoomPrice(double);
+
 	int getRoomID();
 	int getSeatsPerRoom();
+	double getRoomPrice();
 };
 

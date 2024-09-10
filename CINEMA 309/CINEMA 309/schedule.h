@@ -4,12 +4,21 @@
 class Schedule
 {
 private:
-	int startTime;
-	int finishTime;
-	string day;
+	string startTime;
+	string finishTime;
+	string movieDate;
 
 public:
 	Schedule();
-	Schedule(int, int, string);
+	Schedule(string, string, string);
+	~Schedule();
+
+	void setStartTime(string);
+	void setFinishTime(string);
+	void setMovieDate(string);
+
+	string getStartTime();
+	string getFinishTime();
+	string getMovieDate();
 };
 

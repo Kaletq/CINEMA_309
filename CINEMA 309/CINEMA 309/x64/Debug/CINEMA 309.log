@@ -1,0 +1,17 @@
+﻿  booking.cpp
+C:\Users\quesa\Documents\UNI\PROYECTOS\PROGRA\CINEMA_309\CINEMA 309\CINEMA 309\booking.cpp(10,10): error C2084: la función 'Booking::Booking(void)' ya tiene un cuerpo
+      C:\Users\quesa\Documents\UNI\PROYECTOS\PROGRA\CINEMA_309\CINEMA 309\CINEMA 309\booking.cpp(3,10):
+      vea la definición anterior de “Booking::Booking”
+  
+  CINEMA 309.cpp
+  cinema.cpp
+  movie.cpp
+  room.cpp
+  sale.cpp
+C:\Users\quesa\Documents\UNI\PROYECTOS\PROGRA\CINEMA_309\CINEMA 309\CINEMA 309\sale.cpp(3,7): error C2761: "{ctor}": no se permite la nueva declaración del miembro
+C:\Users\quesa\Documents\UNI\PROYECTOS\PROGRA\CINEMA_309\CINEMA 309\CINEMA 309\sale.cpp(4,7): error C2761: "{ctor}": no se permite la nueva declaración del miembro
+C:\Users\quesa\Documents\UNI\PROYECTOS\PROGRA\CINEMA_309\CINEMA 309\CINEMA 309\sale.cpp(5,2): error C2588: '::~Sale': destructor global no válido
+C:\Users\quesa\Documents\UNI\PROYECTOS\PROGRA\CINEMA_309\CINEMA 309\CINEMA 309\sale.cpp(5,2): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  schedule.cpp
+  seat.cpp
+  Generando código...

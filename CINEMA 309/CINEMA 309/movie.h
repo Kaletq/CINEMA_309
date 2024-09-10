@@ -22,9 +22,11 @@ public:
 	void setDuration(int);
 	void setReviews(int);
 	void setLyear(int);
-	int getName();
-	int getStudio();
-	int getCountry();
+	void assignMovieToRoom(Movie, Room);
+
+	string getName();
+	string getStudio(); 
+	string getCountry();
 	int getDuration();
 	int getReviews();
 	int getLyear();

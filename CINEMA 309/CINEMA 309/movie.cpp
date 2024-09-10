@@ -11,16 +11,16 @@ Movie::Movie(string newName, string newStudio, string newCountry, int newDuratio
 }
 Movie::~Movie(){}
 
-void setName(string);
-void setStudio(string);
-void setCountry(string);
-void setDuration(int);
-void setReviews(int);
-void setLyear(int);
+void Movie::setName(string newName) { name = newName; }
+void Movie::setStudio(string newStudio) { studio = newStudio; }
+void Movie::setCountry(string newCountry) { country = newCountry; }
+void Movie::setDuration(int newDuration) { duration = newDuration; }
+void Movie::setReviews(int newReviews) { reviews = newReviews; }
+void Movie::setLyear(int newYear) { launchYear = newYear; }
 
-int getName();
-int getStudio();
-int getCountry();
-int getDuration();
-int getReviews();
-int getLyear();
+string Movie::getName() { return name; }
+string Movie::getStudio() { return studio; }
+string Movie::getCountry() { return country; }
+int Movie::getDuration() { return duration; }
+int Movie::getReviews() { return reviews; }
+int Movie::getLyear() { return launchYear; }
