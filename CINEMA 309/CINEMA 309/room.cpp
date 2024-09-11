@@ -13,6 +13,9 @@ Room::~Room(){}
 void Room::setRoomID(int newRoomID) { RoomID = newRoomID; }
 void Room::setSeatsPerRoom(int newSeatsPerRoom) { seatsPerRoom = newSeatsPerRoom; }
 void Room::setRoomPrice(double newPrice) { roomPrice = newPrice; }
+void Room::assignMovieToRoom(Movie _assignedMovie, Room selectedRoom) {
+	
+}
 
 int Room::getRoomID() { return RoomID; }
 int Room::getSeatsPerRoom() { return seatsPerRoom; }

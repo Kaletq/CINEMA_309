@@ -1,5 +1,5 @@
 #pragma once
-#include "room.h"
+#include "seat.h"
 
 class Movie
 {
@@ -7,30 +7,30 @@ private:
 	string name;
 	string studio;
 	string country;
-	int duration;
-	int reviews;
-	int launchYear;
+	string duration;
+	string reviews;
+	string launchYear;
 
 public:
 	Movie();
-	Movie(string, string, string, int, int, int);
+	Movie(string, string, string, string, string, string);
 	~Movie();
 
 	void setName(string);
 	void setStudio(string);
 	void setCountry(string);
-	void setDuration(int);
-	void setReviews(int);
-	void setLyear(int);
-	void assignMovieToRoom(Movie, Room);
+	void setDuration(string);
+	void setReviews(string);
+	void setLyear(string);
 
 	string getName();
 	string getStudio(); 
 	string getCountry();
-	int getDuration();
-	int getReviews();
-	int getLyear();
-
+	string getDuration();
+	string getReviews();
+	string getLyear();
+	string getMovieInfo();
+	
 
 };
 

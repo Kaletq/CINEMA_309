@@ -1,7 +1,7 @@
 #include "movie.h"
 
 Movie::Movie() {}
-Movie::Movie(string newName, string newStudio, string newCountry, int newDuration, int newReviews, int newLyear) {
+Movie::Movie(string newName, string newStudio, string newCountry, string newDuration, string newReviews, string newLyear) {
 	name = newName;
 	studio = newStudio;
 	country = newCountry;
@@ -14,13 +14,14 @@ Movie::~Movie(){}
 void Movie::setName(string newName) { name = newName; }
 void Movie::setStudio(string newStudio) { studio = newStudio; }
 void Movie::setCountry(string newCountry) { country = newCountry; }
-void Movie::setDuration(int newDuration) { duration = newDuration; }
-void Movie::setReviews(int newReviews) { reviews = newReviews; }
-void Movie::setLyear(int newYear) { launchYear = newYear; }
+void Movie::setDuration(string newDuration) { duration = newDuration; }
+void Movie::setReviews(string newReviews) { reviews = newReviews; }
+void Movie::setLyear(string newYear) { launchYear = newYear; }
 
 string Movie::getName() { return name; }
 string Movie::getStudio() { return studio; }
 string Movie::getCountry() { return country; }
-int Movie::getDuration() { return duration; }
-int Movie::getReviews() { return reviews; }
-int Movie::getLyear() { return launchYear; }
+string Movie::getDuration() { return duration; }
+string Movie::getReviews() { return reviews; }
+string Movie::getLyear() { return launchYear; }
+string Movie::getMovieInfo() { return name; return studio; return country; return duration; return reviews; return launchYear; }

@@ -1,5 +1,5 @@
 #pragma once
-#include "seat.h"
+#include "movie.h"
 
 class Room{
 private:
@@ -16,6 +16,7 @@ public:
 	void setRoomID(int);
 	void setSeatsPerRoom(int);
 	void setRoomPrice(double);
+	void assignMovieToRoom(Movie, Room);
 
 	int getRoomID();
 	int getSeatsPerRoom();

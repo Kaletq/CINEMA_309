@@ -1,12 +1,12 @@
 #include "cinema.h"
 
-Cinema(Movie , Room, Schedule, Booking, Sale);
-~Cinema();
+Cinema::CinemaCinema(Movie , Room, Schedule, Booking, Sale);
+Cinema::~Cinema();
 
-void setCinemaMovies(Movie);
-void setCinemaRooms(Room);
-void setCinemaSchedules(Schedule);
+void Cinema::setCinemaMovies(Movie);
+void Cinema::setCinemaRooms(Room);
+void Cinema::setCinemaSchedules(Schedule);
 
-Movie getCinemaMovies();
-Room getCinemaRooms();
-Schedule getCinemaSchedules();
+Movie Cinema::getCinemaMovies();
+Room Cinema::getCinemaRooms();
+Schedule Cinema::getCinemaSchedules();

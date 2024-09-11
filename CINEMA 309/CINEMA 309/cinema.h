@@ -6,6 +6,8 @@ private:
 	Movie cinemaMovies[15];
 	Room cinemaRooms[12];
 	Schedule cinemaSchedules[30];
+	Booking cinemaBookings;
+	Sale cinemaSales;
 
 public:
 	Cinema(Movie, Room, Schedule, Booking, Sale);
