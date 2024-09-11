@@ -4,12 +4,7 @@
 class Movie
 {
 private:
-	string name;
-	string studio;
-	string country;
-	string duration;
-	string reviews;
-	string launchYear;
+	string name, studio, country, duration, reviews, launchYear;
 
 public:
 	Movie();
@@ -29,8 +24,5 @@ public:
 	string getDuration();
 	string getReviews();
 	string getLyear();
-	string getMovieInfo();
-	
-
 };
 

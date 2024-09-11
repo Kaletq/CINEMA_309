@@ -24,4 +24,3 @@ string Movie::getCountry() { return country; }
 string Movie::getDuration() { return duration; }
 string Movie::getReviews() { return reviews; }
 string Movie::getLyear() { return launchYear; }
-string Movie::getMovieInfo() { return name; return studio; return country; return duration; return reviews; return launchYear; }
