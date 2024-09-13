@@ -4,7 +4,7 @@ class Cinema
 {
 private:
 	Movie cinemaMovies[15];
-	Room cinemaRooms[12];
+	Room cinemaRooms[3];
 	Schedule cinemaSchedules[25];
 	Booking cinemaBookings;
 	Sale cinemaSales;

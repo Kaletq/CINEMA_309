@@ -9,7 +9,7 @@ void Cinema::setCinemaMovies(Movie newCinemaMovie){
 	}
 }
 void Cinema::setCinemaRooms(Room _cinemaRooms){
-	for (int i = 0; i < 15; i++) {
+	for (int i = 0; i < 3; i++) {
 		cinemaRooms[i] = _cinemaRooms;
 	}
 }
@@ -19,29 +19,36 @@ void Cinema::setCinemaSchedules(Schedule _cinemaSchedules){
 	}
 }
 void Cinema::addMovie() {
-	string name, studio, country, duration, reviews, launchYear; int answer;
+	string name, studio, country, duration, reviews, launchYear;
 
 	for (int i = totalMovies; i < 15; i++) {
+		int answer = 0;
 
-		cout << "Ingrese el nombre de la pelicula a agregar: "; cin >> name;
-		cout << "Ingrese el estudio creador de la pelicula: "; cin >> studio;
-		cout << "Ingrese el pais originario de la pelicula: "; cin >> country;
-		cout << "Ingrese la duracion de la pelicula a agregar: "; cin >> duration;
-		cout << "Ingrese las reviews con el formato x/10 de la pelicula a agregar: "; cin >> reviews;
-		cout << "Ingrese el annio de lanzamiento de la pelicula a agregar"; cin >> launchYear;
+		cout << "Ingrese el nombre de la pelicula a agregar: \n";
+		getline(cin, name); cinemaMovies[i].setName(name);
 
-		cinemaMovies[i].setName(name);
-		cinemaMovies[i].setStudio(studio);
-		cinemaMovies[i].setCountry(country);
-		cinemaMovies[i].setDuration(duration);
-		cinemaMovies[i].setReviews(reviews);
-		cinemaMovies[i].setLyear(launchYear);
+		cout << "Ingrese el estudio creador de la pelicula: \n";
+		getline(cin, studio); cinemaMovies[i].setStudio(studio);
 
-		cout << "Si desea agregar una nueva pelicula, digite 1. Si no, digite 2: "; cin >> answer;
+		cout << "Ingrese el pais originario de la pelicula: \n"; 
+		getline(cin, country); cinemaMovies[i].setCountry(country);
+
+		cout << "Ingrese la duracion de la pelicula a agregar: \n"; 
+		getline(cin, duration); cinemaMovies[i].setDuration(duration);
+
+		cout << "Ingrese las reviews con el formato x/10 de la pelicula a agregar: \n"; 
+		getline(cin, reviews); cinemaMovies[i].setReviews(reviews);
+
+		cout << "Ingrese el annio de lanzamiento de la pelicula a agregar: \n"; 
+		getline(cin, launchYear); cinemaMovies[i].setLyear(launchYear);
+
+		cout << "Si desea agregar una nueva pelicula, digite 1. Si no, digite 2: "; cin >> answer; cout << endl; cout << endl;
 		if (answer == 1) {};
 		if (answer == 2) { i = 15; }
-		if (answer != 1 and answer != 2) { cout << "Por favor, digite su respuesta correctamente: "; }
+		if (answer != 1 and answer != 2) {
+			cout << "Por favor, ingrese los datos solicitados. Si desea agregar una nueva pelicula, digite 1, si no, digite 2: \n"; cin >> answer;
+		}
 
 		totalMovies += 1;
 	}
-}
+} 
