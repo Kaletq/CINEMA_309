@@ -18,4 +18,6 @@ public:
 	void setCinemaRooms(Room);
 	void setCinemaSchedules(Schedule);
 	void addMovie();
+	void showCinemaMovies();
+	void prechargeMovies();
 };
