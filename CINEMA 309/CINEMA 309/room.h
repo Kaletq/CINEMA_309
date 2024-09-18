@@ -4,9 +4,9 @@
 class Room{
 private:
 	int RoomID;
-	int seatsPerRoom = 49;
-	Seat roomSeats[7][7];
+	Seat** roomSeats;
 	double roomPrice;
+	Movie movie;
 
 public:
 	Room();
@@ -15,9 +15,9 @@ public:
 
 	void setRoomID(int);
 	void setRoomPrice(double);
-	void assignMovieToRoom(Movie, Room);
 
 	int getRoomID();
 	double getRoomPrice();
+	void chargeSeatsPerRoom();
 };
 

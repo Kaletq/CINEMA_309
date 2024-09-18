@@ -9,6 +9,7 @@ private:
 	Booking cinemaBookings;
 	Sale cinemaSales;
 	int totalMovies = 5;
+	int totalSchedules = 5;
 
 public:
 	Cinema();
@@ -20,4 +21,7 @@ public:
 	void addMovie();
 	void showCinemaMovies();
 	void prechargeMovies();
+	void createSchedule();
+	void showCinemaSchedulesInfo();
+	void prechargeCinemaSchedules();
 };

@@ -7,6 +7,7 @@ string systemOption;
 int main() {
 	Cinema cinema309;
 	cinema309.prechargeMovies();
+	cinema309.prechargeCinemaSchedules();
 
 	bool command = true;
 	while (command)
@@ -45,13 +46,6 @@ int main() {
 				command = false;
 			}
 		}
-
-
-
-
-
-
-
 		if (systemOption == "b") {
 			cout << "Ha ingresado al apartado de mantenimiento del sistema. \n   1. Peliculas\n   2. Salas\n   3. Horarios";
 			cout << "\n\nIngrese el numero de la opcion a la cual desea darle mantenimiento: "; cin >> maintenanceOptions;
@@ -59,11 +53,27 @@ int main() {
 				cout << "\nLa opcion ingresada no es valida. Por favor, digite su respuesta nuevamente: "; cin >> maintenanceOptions;
 			}
 			if (maintenanceOptions == 1) {
-				cout << "\n\nPELICULAS. \n   1. Mostrar peliculas en cartelera\n   2. Agregar una pelicula a cartelera\n   3. Borrar una pelicula de cartelera.\n\n ";
+				cout << "\n\nPELICULAS. \n   1. Mostrar peliculas en cartelera\n   2. Agregar una pelicula a cartelera\n\n ";
 				cout << "Introduzca el numero de la opcion que desea realizar: "; cin >> subMaintenanceOptions;
 				if (subMaintenanceOptions == 1) { cinema309.showCinemaMovies(); }
 				if (subMaintenanceOptions == 2) { cinema309.addMovie(); }
-				if (subMaintenanceOptions == 3) {}
+			}
+			if (maintenanceOptions == 2){
+				cout << "\n\nSALAS. \n   1. Ingresar la informacion de la sala\n\n ";
+				cout << "Introduzca el numero de la opcion que desea realizar: "; cin >> subMaintenanceOptions;
+				if (subMaintenanceOptions == 1){
+
+				}
+			}
+			if (maintenanceOptions == 3) {
+				cout << "\n\nHORARIOS. \n   1. Crear un horario\n   2. Mostrar los horarios existentes\n\n";
+				cout << "Introduzca el numero de la opcion que desea realizar: "; cin >> subMaintenanceOptions;
+				if (subMaintenanceOptions == 1) {
+					cinema309.createSchedule();
+				}
+				if (subMaintenanceOptions == 2) {
+					cinema309.showCinemaSchedulesInfo();
+				}
 			}
 
 		}

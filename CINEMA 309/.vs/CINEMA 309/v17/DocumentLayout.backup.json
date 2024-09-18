@@ -15,6 +15,30 @@
       "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\cinema.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\schedule.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\schedule.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\room.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\sale.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\sale.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\movie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\movie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\movie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\movie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -27,28 +51,8 @@
       "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\seat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\schedule.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\movie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\movie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\seat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\seat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\room.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\sale.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\sale.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\booking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -57,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\booking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\booking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4AD8635-96D9-4FAC-9251-3546E9F80C46}|CINEMA 309\\CINEMA 309.vcxproj|solutionrelative:CINEMA 309\\schedule.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,9 +78,9 @@
               "Title": "CINEMA 309.cpp",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\CINEMA 309.cpp",
               "RelativeDocumentMoniker": "CINEMA 309\\CINEMA 309.cpp",
-              "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\CINEMA 309.cpp",
-              "RelativeToolTip": "CINEMA 309\\CINEMA 309.cpp",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAAEEAAAAlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\CINEMA 309.cpp*",
+              "RelativeToolTip": "CINEMA 309\\CINEMA 309.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-24T03:39:10.957Z",
               "IsPinned": true,
@@ -88,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "seat.h",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\seat.h",
               "RelativeDocumentMoniker": "CINEMA 309\\seat.h",
@@ -100,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "seat.cpp",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\seat.cpp",
               "RelativeDocumentMoniker": "CINEMA 309\\seat.cpp",
@@ -112,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "movie.h",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\movie.h",
               "RelativeDocumentMoniker": "CINEMA 309\\movie.h",
@@ -120,12 +120,11 @@
               "RelativeToolTip": "CINEMA 309\\movie.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-26T21:35:07.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T21:35:07.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "movie.cpp",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\movie.cpp",
               "RelativeDocumentMoniker": "CINEMA 309\\movie.cpp",
@@ -133,59 +132,64 @@
               "RelativeToolTip": "CINEMA 309\\movie.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-29T04:51:50.459Z"
+              "WhenOpened": "2024-08-29T04:51:50.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "room.h",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.h",
               "RelativeDocumentMoniker": "CINEMA 309\\room.h",
               "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.h",
               "RelativeToolTip": "CINEMA 309\\room.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-24T04:14:46.469Z"
+              "WhenOpened": "2024-08-24T04:14:46.469Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "room.cpp",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.cpp",
               "RelativeDocumentMoniker": "CINEMA 309\\room.cpp",
               "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\room.cpp",
               "RelativeToolTip": "CINEMA 309\\room.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-10T16:03:34.211Z"
+              "WhenOpened": "2024-09-10T16:03:34.211Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "schedule.h",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.h",
               "RelativeDocumentMoniker": "CINEMA 309\\schedule.h",
               "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.h",
               "RelativeToolTip": "CINEMA 309\\schedule.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-26T21:33:02.617Z"
+              "WhenOpened": "2024-08-26T21:33:02.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "schedule.cpp",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.cpp",
               "RelativeDocumentMoniker": "CINEMA 309\\schedule.cpp",
               "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\schedule.cpp",
               "RelativeToolTip": "CINEMA 309\\schedule.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-08T04:00:41.508Z"
+              "WhenOpened": "2024-09-08T04:00:41.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "booking.h",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\booking.h",
               "RelativeDocumentMoniker": "CINEMA 309\\booking.h",
@@ -197,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "booking.cpp",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\booking.cpp",
               "RelativeDocumentMoniker": "CINEMA 309\\booking.cpp",
@@ -209,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "sale.h",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\sale.h",
               "RelativeDocumentMoniker": "CINEMA 309\\sale.h",
@@ -217,11 +221,12 @@
               "RelativeToolTip": "CINEMA 309\\sale.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-27T03:43:28.071Z"
+              "WhenOpened": "2024-08-27T03:43:28.071Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "sale.cpp",
               "DocumentMoniker": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\sale.cpp",
               "RelativeDocumentMoniker": "CINEMA 309\\sale.cpp",
@@ -239,7 +244,7 @@
               "RelativeDocumentMoniker": "CINEMA 309\\cinema.h",
               "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\cinema.h",
               "RelativeToolTip": "CINEMA 309\\cinema.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-26T21:56:52.574Z",
               "EditorCaption": ""
@@ -252,7 +257,7 @@
               "RelativeDocumentMoniker": "CINEMA 309\\cinema.cpp",
               "ToolTip": "C:\\Users\\quesa\\Documents\\UNI\\PROYECTOS\\PROGRA\\CINEMA_309\\CINEMA 309\\CINEMA 309\\cinema.cpp",
               "RelativeToolTip": "CINEMA 309\\cinema.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAG4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-10T16:19:25.562Z",
               "EditorCaption": ""
