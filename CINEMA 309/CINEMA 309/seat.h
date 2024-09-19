@@ -1,22 +1,23 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <random>
 
 using namespace std;
 
 class Seat
 {private:
 	int seatID;
-	bool seatState;
+	int seatState;
 
 public:
 	Seat();
-	Seat(int, bool);
+	Seat(int, int);
 	~Seat();
 
 	void setSeatID(int);
-	void setSeatState(bool);
+	void setSeatState(int);
 	int getSeatID();
-	bool getSeatState();
+	int getSeatState();
 };
 

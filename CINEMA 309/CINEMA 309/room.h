@@ -1,10 +1,11 @@
 #pragma once
 #include "movie.h"
+const int ROOMSIZE = 7;
 
 class Room{
 private:
 	int RoomID;
-	Seat** roomSeats;
+	Seat roomSeats[ROOMSIZE][ROOMSIZE];
 	double roomPrice;
 	Movie movie;
 
@@ -15,9 +16,10 @@ public:
 
 	void setRoomID(int);
 	void setRoomPrice(double);
-
+	void setSeatState(int, int, int);
 	int getRoomID();
 	double getRoomPrice();
-	void chargeSeatsPerRoom();
+	int getSeatState(int, int);
+
 };
 

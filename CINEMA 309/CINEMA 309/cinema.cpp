@@ -115,3 +115,52 @@ void Cinema::prechargeCinemaSchedules() {
 	cinemaSchedules[3] = Schedule("Barbie The Movie", "Miercoles 08 de diciembre", "15:00 PM", "17:00 PM", "Sala #2");
 	cinemaSchedules[4] = Schedule("El Libro de Eli", "Jueves 09 de diciembre", "10:00 AM", "12:00 MD", "Sala #2");
 }
+void Cinema::createReservation(Cinema comercialCinema){
+	int movieOption;
+
+	cout << "\n\nPeliculas disponibles en cartelera: \n";
+	comercialCinema.showCinemaMovies();
+	cout << "\nDigite el numero de la pelicula que desea reservar: \n";
+	cin.ignore(numeric_limits<streamsize>::max(), '\n'); cin >> movieOption;
+
+	comercialCinema.showCinemaSchedulesInfo();
+	//comercialCinema.showSeatStates();
+
+}
+void Cinema::assignSeatsStates(){
+	int rows, columns, seats[ROOMSIZE][ROOMSIZE], i;
+	random_device rd;
+	mt19937 gen(rd());
+	for (i = 0; i < CINEMAROOMS; i++) {
+		for (rows = 0; rows < ROOMSIZE; rows++) {
+			for (columns = 0; columns < ROOMSIZE; columns++) {
+				uniform_int_distribution <> distrib(0, 2);
+				seats[rows][columns] = distrib(gen);
+				cinemaRooms[i].setSeatState(rows, columns, seats[rows][columns]);
+			}
+		}
+	}
+
+}
+void Cinema::showSeatStates(int _cinemaRoom){
+	int rows, columns;
+	for (rows = 0; rows < ROOMSIZE; rows++) {
+		for (columns = 0; columns < ROOMSIZE; columns++) {
+
+			if (cinemaRooms[_cinemaRoom].getSeatState(rows, columns) == 0) {
+				cout << " D ";
+			}
+			if (cinemaRooms[_cinemaRoom].getSeatState(rows, columns) == 1) {
+				cout << " R ";
+			}
+			if (cinemaRooms[_cinemaRoom].getSeatState(rows, columns) == 2) {
+				cout << " V ";
+			}
+		}
+		cout << endl;
+	}
+	cout << "\n\nSimbologia del sistema:";
+	cout << "\n\nD = Disponible\n";
+	cout << "R = Reservado\n";
+	cout << "V = Vendido\n\n";
+}

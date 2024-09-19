@@ -8,12 +8,13 @@ int main() {
 	Cinema cinema309;
 	cinema309.prechargeMovies();
 	cinema309.prechargeCinemaSchedules();
-
+	cinema309.assignSeatsStates();
+	
 	bool command = true;
 	while (command)
 	{
 
-		cout << "\n\nBienvenido al sistema de administracion cinematografico del Cinema 309\n\n\n";
+		cout << "\nBienvenido al sistema de administracion cinematografico del Cinema 309\n\n\n";
 		cout << "a. Informacion del sistema \n";
 		cout << "   1. Acerca de \n   2. Salir del sistema  \n\n";
 		cout << "b. Mantenimiento del sistema \n";
@@ -24,10 +25,7 @@ int main() {
 		cout << "   1. Venta de peliculas\n\n";
 
 		cout << "\nDigite la letra del apartado del sistema que desea utilizar: \n"; cin >> systemOption;
-		/*if (systemOption != "a" or systemOption != "b" or systemOption != "c" or systemOption != "d") {
-			cout << "\nLa opcion ingresada no es valida. Por favor, digite su respuesta nuevamente: "; cin >> systemOption;
-		}*/
-		//validacion de systemOptioms no funciona
+		
 		if (systemOption == "a") {
 			cout << "Ha ingresado al apartado de informacion del sistema. \n   1. Acerca de\n   2. Salir del sistema ";
 			cout << "\nIngrese el numero de la opcion que desea ejecutar: "; cin >> archiveOptions;
@@ -59,10 +57,17 @@ int main() {
 				if (subMaintenanceOptions == 2) { cinema309.addMovie(); }
 			}
 			if (maintenanceOptions == 2){
-				cout << "\n\nSALAS. \n   1. Ingresar la informacion de la sala\n\n ";
+				cout << "\n\nSALAS. \n   1. Consultar la informacion de la sala\n\n ";
 				cout << "Introduzca el numero de la opcion que desea realizar: "; cin >> subMaintenanceOptions;
 				if (subMaintenanceOptions == 1){
-
+					int roomNumber;
+					cout << "Ingrese el numero de la sala que desea consultar. (Hay 3 salas): ";
+					cin.ignore(numeric_limits<streamsize>::max(), '\n'); cin >> roomNumber;
+					if (roomNumber != 1 && roomNumber != 2 && roomNumber != 3) {
+						cout << "El numero ingresado no es valido, por favor intentelo de nuevo: ";
+						cin.ignore(numeric_limits<streamsize>::max(), '\n'); cin >> roomNumber;
+					}
+					cinema309.showSeatStates(roomNumber);
 				}
 			}
 			if (maintenanceOptions == 3) {
@@ -79,12 +84,19 @@ int main() {
 		}
 
 
+		if (systemOption == "c") {
+			int subReserveOption = 0;
+			cout << "Ha ingresado al apartado de reservas. \n   1.Hacer una reserva";
+			cout << "\n\nIngrese el numero de la opcion que desea ejecutar: "; cin >> reserveOptions;
+			if (reserveOptions == 1) {
+				
+
+			}
 
 
 
-
-
-		if (systemOption == "c") {}
+		 }
+		
 		if (systemOption == "d") {}
 	}
 	
