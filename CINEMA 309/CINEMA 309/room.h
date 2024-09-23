@@ -8,6 +8,7 @@ private:
 	Seat roomSeats[ROOMSIZE][ROOMSIZE];
 	double roomPrice;
 	Movie movie;
+	int customerID;
 
 public:
 	Room();

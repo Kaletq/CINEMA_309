@@ -3,25 +3,27 @@
 
 class Booking
 {
-private: 
-	Schedule bookingSchedule;
-	Seat bookingSeats;
-	double bookingPrice;
-	int reserveID;
+private:
+	int bookingSchedule = 0;
+	int bookingSeats = 0;
+	double bookingPrice = 0;
+	int reserveID = 0;
+	int userID = 0;
 
 public:
 	Booking();
-	Booking(Schedule, Seat, double, int);
+	Booking(int, int, double, int, int);
 	~Booking();
 
-	void setBookingSchedule(Schedule);
-	void setBookingSeats(Seat);
+	void setBookingSchedule(int);
+	void setBookingSeats(int);
 	void setBookingPrice(double);
 	void setReserveID(int);
-
-	Schedule getBookingSchedule();
-	Seat getBookingSeats();
+	void setUserID(int);
+	int getBookingSchedule();
+	int getBookingSeats();
 	double getBookingPrice();
-	int getReserveID(); 
+	int getReserveID();
+	int getUserID();
 };
 

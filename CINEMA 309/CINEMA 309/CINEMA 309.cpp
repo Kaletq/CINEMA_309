@@ -89,8 +89,7 @@ int main() {
 			cout << "Ha ingresado al apartado de reservas. \n   1.Hacer una reserva";
 			cout << "\n\nIngrese el numero de la opcion que desea ejecutar: "; cin >> reserveOptions;
 			if (reserveOptions == 1) {
-				
-
+				cinema309.createReservation(cinema309);
 			}
 
 

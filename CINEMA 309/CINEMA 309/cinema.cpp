@@ -66,7 +66,8 @@ void Cinema::prechargeMovies() {
 	cinemaMovies[4] = Movie("Barbie The Movie", "Heyday Films, LuckyChap Entertainment, NB / GG Pictures, Mattel Films", "Estados Unidos", "1 hora y 54 minutos", "6.8/10", "2023");
 }
 void Cinema::createSchedule() {
-	string movieName, date, startTime, finishTime, roomNumber;
+	string movieName, date, startTime, finishTime;
+	int roomNumber;
 	
 	for (int i = totalSchedules; i < 25; i++) {
 		int answer = 0;
@@ -83,8 +84,8 @@ void Cinema::createSchedule() {
 		cout << "\nIngrese la hora de finalizacion de la pelicula: \n";
 		getline(cin, finishTime); cinemaSchedules[i].setFinishTime(finishTime);
 
-		cout << "\nIngrese la sala donde se vera la pelicula: \n";
-		getline(cin, roomNumber); cinemaSchedules[i].setRoomNumber(roomNumber);
+		cout << "\nIngrese la sala donde se vera la pelicula: \n"; cin >> roomNumber;
+		cinemaSchedules[i].setRoomNumber(roomNumber); 
 
 		cout << "\nSi desea agregar un nuevo horario, digite 1. Si no, digite 2: "; cin >> answer;
 
@@ -102,30 +103,81 @@ void Cinema::showCinemaSchedulesInfo() {
 		cout << "Fecha de reproduccion: " << cinemaSchedules[i].getMovieDate() << endl;
 		cout << "Hora de inicio: " << cinemaSchedules[i].getStartTime() << endl;
 		cout << "Hora de finalizacion: " << cinemaSchedules[i].getFinishTime() << endl;
-		cout << "Sala de exhibicion: " << cinemaSchedules[i].getRoomNumber() << endl << endl;
+		cout << "Sala de exhibicion: " <<"Sala #" << cinemaSchedules[i].getRoomNumber() << endl << endl;
 
 		scheduleNumber += 1;
 		cout << endl; cout << endl;
 	}
 }
 void Cinema::prechargeCinemaSchedules() {
-	cinemaSchedules[0] = Schedule("DeadPool 2", "Miercoles 08 de diciembre", "11:45 AM", "14:20 PM", "Sala #1");
-	cinemaSchedules[1] = Schedule("Memengers: End Gey", "Miercoles 08 de diciembre", "17:10 PM", "20:45 PM", "Sala #1");
-	cinemaSchedules[2] = Schedule("DeadPool 2", "Miercoles 08 de diciembre", "17:10 PM", "19:45 PM", "Sala #3");
-	cinemaSchedules[3] = Schedule("Barbie The Movie", "Miercoles 08 de diciembre", "15:00 PM", "17:00 PM", "Sala #2");
-	cinemaSchedules[4] = Schedule("El Libro de Eli", "Jueves 09 de diciembre", "10:00 AM", "12:00 MD", "Sala #2");
+	cinemaSchedules[0] = Schedule("DeadPool 2", "Miercoles 08 de diciembre", "11:45 AM", "14:20 PM", 1);
+	cinemaSchedules[1] = Schedule("Memengers: End Gey", "Miercoles 08 de diciembre", "17:10 PM", "20:45 PM", 1);
+	cinemaSchedules[2] = Schedule("DeadPool 2", "Miercoles 08 de diciembre", "17:10 PM", "19:45 PM", 3);
+	cinemaSchedules[3] = Schedule("Barbie The Movie", "Miercoles 08 de diciembre", "15:00 PM", "17:00 PM", 2);
+	cinemaSchedules[4] = Schedule("El Libro de Eli", "Jueves 09 de diciembre", "10:00 AM", "12:00 MD", 2);
 }
 void Cinema::createReservation(Cinema comercialCinema){
-	int movieOption;
+	int scheduleOption = 0, roomNumber = 0, numberOfSeats = 1, seatRow = 0, seatColumn = 0;
+	int customerID = 0, customerTicket = 0;
+	double reservationPrice = 0;
+	bool validator = true;
 
-	cout << "\n\nPeliculas disponibles en cartelera: \n";
-	comercialCinema.showCinemaMovies();
-	cout << "\nDigite el numero de la pelicula que desea reservar: \n";
-	cin.ignore(numeric_limits<streamsize>::max(), '\n'); cin >> movieOption;
-
+	cout << "\nA continuacion, se mostraran todos los horarios disponibles: \n\n";
 	comercialCinema.showCinemaSchedulesInfo();
-	//comercialCinema.showSeatStates();
+	cout << "\nPor favor, eliga el horario en el que desea hacer una reserva reservar: \n\n"; cin >> scheduleOption;
+	
+	cout << "\nLas asientos disponibles son los siguientes: \n\n";
+	comercialCinema.showSeatStates(cinemaSchedules[scheduleOption - 1].getRoomNumber());
+	roomNumber = cinemaSchedules[scheduleOption - 1].getRoomNumber();
+	
+	while(!validator){
+		for (int i = 0; i < numberOfSeats; i++) {
+			for (int j = 0; j < numberOfSeats; j++) {
+				cout << "Ingrese la fila del asiento que desea reservar: "; cin >> seatRow;
+				if (seatRow < 0 || seatRow > ROOMSIZE) {
+					cout << "La fila ingresada es invalida. Por favor, ingrese nuevamente la fila del asiento a reservar: ";
+					cin >> seatRow;
+				}
+				cout << "Ingrese la columna del asiento que desea reservar: "; cin >> seatColumn;
+				if (seatColumn < 0 || seatColumn > ROOMSIZE) {
+					cout << "La columna ingresada es invalida. Por favor, ingrese nuevamente la columna del asiento a reservar: ";
+					cin >> seatColumn;
+				}
+				if (cinemaRooms[roomNumber].getSeatState(seatRow - 1, seatColumn - 1) == 0) {
+					int userChoice = 0;
+					reservationPrice += 6.49;
+					cout << "El precio total de la reservacion es de: $" << reservationPrice << endl;
+					cout << "¿Desea reservar el asiento?\n   1. Si, deseo realizar la reserva del asiento\n   2. No, me arrepenti y ya no quiero nada\n"; cin >> userChoice;
+					if (userChoice == 1) {
+						cinemaRooms[roomNumber - 1].setSeatState(seatRow, seatColumn, 1);
+						cout << "Por favor, digite su numero de identificacion: \n"; cin >> customerID;
+						customerTicket = comercialCinema.generateCustomerTicket();
 
+						for (int i = 0; i < totalBookings; i++) {
+							cinemaBookings[i] = Booking(scheduleOption, numberOfSeats, reservationPrice, customerTicket, customerID);
+						}
+						cout << "Reservacion realizada exitosamente.\n";
+						cout << "ATENCION!!! El siguiente numero es un identificador NECESARIO para validar la compra: " << customerTicket;
+						cout << "\nLe pedimos que lo copie / guarde para evitar futuros inconvenientes. \nGracias por su comprension\n\n";
+						totalBookings++;
+					}
+					if (userChoice == 2) {
+						cout << "La reservacion ha sido cancelada.\n\n";
+					}
+				}
+				if (cinemaRooms[roomNumber].getSeatState(seatRow, seatColumn) == 1) {
+					cout << "El asiento seleccionado ya ha sido reservado.\nPor favor, seleccione otro\n";
+					validator = true;
+				}
+				if (cinemaRooms[roomNumber].getSeatState(seatRow, seatColumn) == 2) {
+					cout << "El asiento seleccionado ya ha sido vendido.\nPor favor, seleccione otro\n";
+					validator = true;
+				}
+			}
+		}
+	}
+	
+	
 }
 void Cinema::assignSeatsStates(){
 	int rows, columns, seats[ROOMSIZE][ROOMSIZE], i;
@@ -163,4 +215,48 @@ void Cinema::showSeatStates(int _cinemaRoom){
 	cout << "\n\nD = Disponible\n";
 	cout << "R = Reservado\n";
 	cout << "V = Vendido\n\n";
+}
+int Cinema::generateCustomerTicket(){
+	int bookingID;
+	random_device rd;
+	mt19937 gen(rd());
+	uniform_int_distribution <> distrib(100000, 999999);
+	bookingID = distrib(gen);
+	return bookingID;
+}
+void Cinema::validateSale(Cinema comercialCinema){
+	int userID = 0, ticketID = 0, creditCard = 0, securityCode = 0, userChoice = 0;
+	bool validator = true;
+	cout << "Ingrese el numero de cedula a consultar: " << endl; cin >> userID;		
+
+	while (!validator) {
+
+		for (int i = 0; i < totalBookings; i++) {
+			if (cinemaBookings[i].getUserID() != userID) {
+				cout << "Este usuario no cuenta con reservas registradas. \n\n";
+			}
+			else {
+				cout << "Ingrese el numero del consecutivo generado en la reserva: " << endl; cin >> ticketID;
+				if (cinemaBookings[i].getReserveID() != ticketID) {
+					cout << "El numero ingresado no es valido. Intentelo de nuevo. ";
+					validator = true;
+				}
+				else {
+					cout << "¿Desea validar la compra? \n   1. Si\n   2. No";
+					if (userChoice == 1) {
+						cout << "Digite su numero de tarjeta de credito: " << endl; cin >> creditCard;
+						cout << "Digite el numero de seguridad de la tarjeta: " << endl; cin >> securityCode;
+						cout << "La compra se ha validado correctamente. Gracias por preferir CINEMA 309\n\n";
+					}
+					else if (userChoice == 2){
+						cout << "Se ha cancelado la vaina";
+						return;
+					}
+						
+
+				}
+			}
+		}
+
+	}
 }

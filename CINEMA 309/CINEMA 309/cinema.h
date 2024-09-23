@@ -7,10 +7,11 @@ private:
 	Movie cinemaMovies[15];
 	Room cinemaRooms[CINEMAROOMS];
 	Schedule cinemaSchedules[25];
-	Booking cinemaBookings;
+	Booking cinemaBookings[100];
 	Sale cinemaSales;
 	int totalMovies = 5;
 	int totalSchedules = 5;
+	int totalBookings = 0;
 
 public:
 	Cinema();
@@ -28,4 +29,6 @@ public:
 	void createReservation(Cinema);
 	void assignSeatsStates();
 	void showSeatStates(int cinemaRoom);
+	int generateCustomerTicket();
+	void validateSale(Cinema);
 };

@@ -14,3 +14,4 @@ void Seat::setSeatState(int newState) {
 }
 int Seat::getSeatID() { return seatID; }
 int Seat::getSeatState() { return seatState; }
+
